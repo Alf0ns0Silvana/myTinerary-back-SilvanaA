@@ -32,7 +32,8 @@
           "country": "United States",
           "img": "path-to-san-francisco-image.jpg",
           "description": "Tech hub known for its hilly terrain, Golden Gate Bridge, and cultural scene.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -40,7 +41,8 @@
           "country": "Netherlands",
           "img": "path-to-amsterdam-image.jpg",
           "description": "Canal-filled city with historic architecture, museums, and vibrant nightlife.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -48,7 +50,8 @@
           "country": "Thailand",
           "img": "path-to-bangkok-image.jpg",
           "description": "Capital of Thailand known for its ornate temples, street markets, and cuisine.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -56,7 +59,8 @@
           "country": "Spain",
           "img": "path-to-madrid-image.jpg",
           "description": "Energetic city celebrated for its art, architecture, and lively cultural scene.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -64,7 +68,8 @@
           "country": "Austria",
           "img": "path-to-vienna-image.jpg",
           "description": "Historic city renowned for its classical music heritage and imperial architecture.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -72,7 +77,8 @@
           "country": "South Korea",
           "img": "path-to-busan-image.jpg",
           "description": "Coastal city known for its beaches, seafood, and bustling markets.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -80,7 +86,8 @@
           "country": "Czech Republic",
           "img": "path-to-prague-image.jpg",
           "description": "Charming city famous for its medieval architecture and rich history.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -88,7 +95,8 @@
           "country": "Netherlands",
           "img": "path-to-the-hague-image.jpg",
           "description": "Administrative city known for its government institutions, art, and cultural heritage.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -96,7 +104,8 @@
           "country": "United Kingdom",
           "img": "path-to-leeds-image.jpg",
           "description": "Vibrant city with a mix of historical sites, shopping, and cultural venues.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -104,7 +113,8 @@
           "country": "Luxembourg",
           "img": "path-to-luxembourg-image.jpg",
           "description": "Capital city known for its financial sector, historic fortifications, and European institutions.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -112,7 +122,8 @@
           "country": "Mexico",
           "img": "path-to-leon-image.jpg",
           "description": "City celebrated for its colonial architecture, leather goods, and festivals.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         },
         
         {
@@ -120,7 +131,8 @@
           "country": "Kuwait",
           "img": "path-to-kuwait-city-image.jpg",
           "description": "Capital city with modern skyscrapers, historic buildings, and a rich cultural heritage.",
-          "departureDateTime": "2023-08-20 T09:00:00"
+          "departureDateTime": "2023-08-20 T09:00:00",
+          "user": "64de7392c06a785cf2f66fbc"
         }
     ]
 }

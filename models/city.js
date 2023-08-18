@@ -4,9 +4,9 @@ const collection = 'cities';
 
 const schema = new Schema({ 
     name: { type: String, required: true},
-    country: { type: String, required: true},
+    country: { type: String},
     img: { type: String, required: true},
-    description: { type: String, required: true},
+    description: { type: String},
     date: { type: Date},
     user: { type: Types.ObjectId, ref: 'users'}
 }, {
