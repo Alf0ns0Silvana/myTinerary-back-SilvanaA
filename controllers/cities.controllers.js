@@ -58,19 +58,24 @@ const controller = {
     },
     createCity: async (req, res) => {
         try {
-            const newCity = await City.create(req.body); 
+            const cities = req.body.cities;
+            
+            for (const cityData of cities) {
+                const newCity = await City.create(cityData);
+            }
+            
             return res.status(201).json({
-                success:true,
-                message:'City created'
-            })
+                success: true,
+                message: 'Cities created'
+            });
         } catch (error) {
-            console.log(error)
+            console.log(error);
             return res.status(500).json({
-                success:false,
-                message:'Error creating city'
-            })
+                success: false,
+                message: 'Error creating cities'
+            });
         }
-     }
+    }
     //,
     // postCities: () => {},
     // deleteCities: () => {},

@@ -4,10 +4,10 @@ const collection = 'cities';
 
 const schema = new Schema({ 
     name: { type: String, required: true},
-    country: { type: String},
+    country: { type: String, required: true},
     img: { type: String, required: true},
-    description: { type: String},
-    date: { type: Date},
+    description: { type: String, required: true},
+    departureDateTime: { type: String},
     user: { type: Types.ObjectId, ref: 'users'}
 }, {
     timesStapms: true
