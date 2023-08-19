@@ -57,7 +57,7 @@
         {
           "name": "Madrid",
           "country": "Spain",
-          "img": "path-to-madrid-image.jpg",
+          "img": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFkcmlkfGVufDB8fDB8fHww&w=1000&q=80",
           "description": "Energetic city celebrated for its art, architecture, and lively cultural scene.",
           "departureDateTime": "2023-08-20 T09:00:00",
           "user": "64de7392c06a785cf2f66fbc"
