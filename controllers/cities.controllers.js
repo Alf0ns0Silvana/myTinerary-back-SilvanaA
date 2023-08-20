@@ -76,9 +76,39 @@ const controller = {
             });
         }
     }
-    //,
-    // postCities: () => {},
-    // deleteCities: () => {},
+    ,
+    UpdateCity: async (req, res) => {
+        try {
+            await City.updateOne({_id: req.params.id}, req.body)
+            
+            return res.status(200).json({
+                success: true,
+                message: 'The city was succefully updated'
+            })
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                success: false,
+                message: 'Error updating city'
+            });
+        }    
+     }, 
+    deleteCity: async (req, res) => {
+        try {
+            await City.deleteOne({_id: req.params.id})
+            
+            return res.status(200).json({
+                success: true,
+                message: 'The city was succefully deleted'
+            })
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                success: false,
+                message: 'Error delete city'
+            });
+        }    
+    }
 }
 
 export default controller;
