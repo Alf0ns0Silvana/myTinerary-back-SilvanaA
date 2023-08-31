@@ -8,9 +8,10 @@ const schema = new Schema({
     img: { type: String, required: true},
     description: { type: String, required: true},
     departureDateTime: { type: String},
-    user: { type: Types.ObjectId, ref: 'users'}
+    user: { type: Types.ObjectId, ref: 'users'},
+    Itinerary: { type: Types.ObjectId, ref:'itineraries'} 
 }, {
-    timesStapms: true
+    timestamps: true
 })
 
 let City = model(collection, schema)

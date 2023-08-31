@@ -1,18 +1,21 @@
 import City from "../models/city.js";
+
 const controller = {
     getCities: async (req, res) => {
         
         let queries = {}
-
         if (req.query.name) {
             queries.name = new RegExp(`^${req.query.name}`,`i`)
         }
         if (req.query.country) {
             queries.country = new RegExp(`^${req.query.country}`,`i`)
         }
-
         try {
-           const cities = await City.find(queries).populate('user')
+            const cities = await City.find(queries)
+            .populate({
+                path: 'Itinerary',
+            })
+            .populate('user');
 
             if(cities.length > 0) {
                 return res.status(200).json({
