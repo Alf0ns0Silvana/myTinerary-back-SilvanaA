@@ -39,7 +39,8 @@ const controller = {
     getCityById: async (req, res) => {
         try {
             const oneCity = await City.findById(req.params.id)
-            
+            .populate('Itinerary')
+            // console.log("one city", oneCity);
             if(oneCity) {
                 return res.status(200).json({
                     success:true,

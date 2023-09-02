@@ -9,7 +9,7 @@ const schema = new Schema({
     description: { type: String, required: true},
     departureDateTime: { type: String},
     user: { type: Types.ObjectId, ref: 'users'},
-    Itinerary: { type: Types.ObjectId, ref:'itineraries'} 
+    Itinerary: [{ type: Types.ObjectId, ref:'itineraries'}]
 }, {
     timestamps: true
 })
