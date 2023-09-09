@@ -3,14 +3,15 @@ import User from "../models/user.js";
 
 export const isADmin = async (req, res, next) => {
     try {
-        const user = await User.findById(req.query.userId)
+        const userId = req.user._id;
+        const user = await User.findById(userId);
     
             if (user.role == 'admin') {
                 return next()
         } 
             return res.status(401).json({
                 succes: false,
-                message: 'User unauthorized to delete city'
+                message: 'User unauthorized to ... city'
         })   
         
     } catch (error) {

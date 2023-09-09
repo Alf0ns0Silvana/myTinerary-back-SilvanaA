@@ -62,11 +62,20 @@ const controller = {
     },
     createCity: async (req, res) => {
         try {
-            const cities = req.body.cities;
-            
-            for (const cityData of cities) {
-                const newCity = await City.create(cityData);
-            }
+            const cityData = req.body;
+    
+            const userId = cityData.user;
+            const itineraryId = cityData.Itinerary;
+
+            const newCity = await City.create({
+                name: cityData.name,
+                country: cityData.country,
+                img: cityData.img,
+                description: cityData.description,
+                departureDateTime: cityData.departureDateTime,
+                user: userId,
+                Itinerary: itineraryId
+            });
             
             return res.status(201).json({
                 success: true,
