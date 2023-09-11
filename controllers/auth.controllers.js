@@ -75,6 +75,21 @@ const controller = {
                 message: 'Error authenticating user.'
             })
         }
+    },
+    token: async (req, res, next ) => {
+    //console.log('token')
+    const {user} = req
+        try {
+            return res.status(200).json({
+                user: {
+                    name: user.name,
+                    email:user.email,
+                    img: user.img
+                }
+            })
+        } catch (error) {
+            next(error)
+        }
     }
 }
 
