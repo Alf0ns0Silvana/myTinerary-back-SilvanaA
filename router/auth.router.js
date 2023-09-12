@@ -6,14 +6,15 @@ import { accountHasBeenVerified } from "../middlewares/auth/accountHasBeenVerifi
 import { passwordIsOk } from "../middlewares/auth/passwordIsOk.middleware.js";
 import { createUserSchema } from "../schema/user.schema.js";
 import passport from "../middlewares/auth/passport.js";
+import { validator } from "../middlewares/validator.js";
 
 const { signUp, signIn, signOut, token } = authController;
 
 const router = express.Router();
 
-router.post('/signup', /* validator(createUserSchema), */accountExistsSignup, signUp)
+router.post('/signup',  validator(createUserSchema), accountExistsSignup, signUp)
 
-router.post('/signin', /* validator(createUserSchema), */accountExistsSignin, accountHasBeenVerified, passwordIsOk, signIn)
+router.post('/signin',  validator(createUserSchema), accountExistsSignin, accountHasBeenVerified, passwordIsOk, signIn)
 
 router.post('/signout', passport.authenticate('jwt', {session:false}), signOut )
 
