@@ -83,8 +83,8 @@ const controller = {
 
             let user = await User.findOne({email});
 
-            if(!user){ //(!user) si no existe..
-                const data = { //lo creo
+            if(!user){ 
+                const data = {
                     name,
                     email,
                     img,
@@ -93,8 +93,7 @@ const controller = {
                     verified_code: crypto.randomBytes(10).toString('hex')              
                 }
                 user = await User.create(data)
-            } // esto en caso de que el user no exista en mi base de datos 
-            // si existe lo logueo
+            } 
             user.online = true;
             await user.save()
 
